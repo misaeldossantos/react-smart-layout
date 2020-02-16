@@ -1,0 +1,20 @@
+{
+  "name": "react-smart-layout",
+  "version": "0.0.1",
+  "description": "Using flexbox to create simple and useful components (React Native).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flexbox",
+    "react",
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misaelbs/react-smart-layout.git"
+  },
+  "author": "Misael dos Santos",
+  "license": "MIT"
+}
