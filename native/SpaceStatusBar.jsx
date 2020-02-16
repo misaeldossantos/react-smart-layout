@@ -3,5 +3,5 @@ import styled from 'styled-components'
 import constants from "../utils/constants";
 
 export default styled.View`
-    margin-top: ${constants.statusBarHeight};
+    margin-top: ${constants.statusBarHeight}px;
 `

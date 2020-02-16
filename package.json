@@ -11,6 +11,9 @@
     "react",
     "react-native"
   ],
+  "peerDependencies": {
+    "styled-components": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/misaelbs/react-smart-layout.git"

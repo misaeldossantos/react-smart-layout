@@ -15,7 +15,7 @@ export default function ({ children, space, alignCenter, style, scrollable, scro
         } : {})}
     >
         {React.Children.map(children, (child, index) => {
-            return <View style={{ paddingRight: index !== count ? space : 0 }}>
+            return <View key={index} style={{ paddingRight: index !== count ? space : 0 }}>
                 {child}
             </View>
         })}
