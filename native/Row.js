@@ -1,5 +1,6 @@
 import React from 'react'
 import { ScrollView, View } from "react-native";
+import { flattenDepth } from 'lodash'
 
 export default function ({ children, space, alignCenter, style, scrollable, scrollProps = {} }) {
 
@@ -8,7 +9,7 @@ export default function ({ children, space, alignCenter, style, scrollable, scro
     const Wrapper = scrollable ? ScrollView : View
 
     return <Wrapper
-        style={[{ flexDirection: 'row', alignItems: alignCenter? 'center': 'flex-start' }, style].flat(2)}
+        style={flattenDepth([{ flexDirection: 'row', alignItems: alignCenter? 'center': 'flex-start' }, style], 2)}
         {...(scrollable ? {
             horizontal: true,
             ...scrollProps

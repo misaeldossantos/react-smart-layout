@@ -1,1 +1,1 @@
-export {default as native} from './native'
+export * from './native'
