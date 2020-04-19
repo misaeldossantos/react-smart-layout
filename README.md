@@ -12,7 +12,7 @@ Right now we only support React Native, but soon we will support ReactJS.
 
 ## Current version
 
-`react-smart-layout@0.0.5`
+`react-smart-layout@0.1.0`
 
 ## Install
 
