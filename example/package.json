@@ -13,7 +13,7 @@
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-web": "~0.11.7",
-    "react-smart-layout": "0.0.2",
+    "react-smart-layout": "^0.1.5",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {

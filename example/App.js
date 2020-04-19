@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Padding, Column, Row, SpaceStatusBar } from 'react-smart-layout/native'
+import { Padding, Column, Row, SpaceStatusBar } from 'react-smart-layout'
 
 export default function App() {
   return (

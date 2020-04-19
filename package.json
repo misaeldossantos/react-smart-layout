@@ -1,6 +1,6 @@
 {
   "name": "react-smart-layout",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Using flexbox to create simple and useful components (React Native).",
   "main": "lib/index.js",
   "scripts": {
@@ -14,10 +14,8 @@
   ],
   "peerDependencies": {
     "lodash": "^4.17.15",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-native": "^0.62.2",
-    "styled-components": "*"
+    "styled-components": "^5.1.0"
   },
   "repository": {
     "type": "git",
@@ -26,14 +24,18 @@
   "author": "Misael dos Santos",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
-    "@babel/core": "^7.9.0",
     "babel-loader": "^8.1.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "react-native": "^0.62.2",
+    "styled-components": "^5.1.0"
   }
 }

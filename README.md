@@ -12,7 +12,7 @@ Right now we only support React Native, but soon we will support ReactJS.
 
 ## Current version
 
-`react-smart-layout@0.1.0`
+`react-smart-layout@0.2.0`
 
 ## Install
 
@@ -28,7 +28,7 @@ Wrap components with padding
 ```jsx
 import React from 'react'
 import {Text} from 'react-native'
-import {Padding} from 'react-smart-layout/native'
+import {Padding} from 'react-smart-layout'
 
 function MyComponent() {
     return <Padding
@@ -65,7 +65,7 @@ Create element with style 'flex-direction: row' and put space between elements
 ```jsx
 import React from 'react'
 import {Text} from 'react-native'
-import {Row} from 'react-smart-layout/native'
+import {Row} from 'react-smart-layout'
 
 function MyComponent() {
     return <Row
@@ -97,7 +97,7 @@ Create element with style 'flex-direction: column' and put space between element
 ```jsx
 import React from 'react'
 import {Text} from 'react-native'
-import {Column, Padding} from 'react-smart-layout/native'
+import {Column, Padding} from 'react-smart-layout'
 import {Divider} from 'react-native-elements'
 
 function MyComponent() {
@@ -132,7 +132,7 @@ Put space of status bar
 ```jsx
 import React from 'react'
 import {Text, View} from 'react-native'
-import {SpaceStatusBar} from 'react-smart-layout/native'
+import {SpaceStatusBar} from 'react-smart-layout'
 import styled from 'styled-components'
 
 function MyComponent() {
@@ -169,7 +169,7 @@ Create a component with style, :
 ```jsx
 import React from 'react'
 import {Text, View} from 'react-native'
-import {RowBetween} from 'react-smart-layout/native'
+import {RowBetween} from 'react-smart-layout'
 
 function MyComponent() {
     return <View>
@@ -191,7 +191,7 @@ Wrap elements with KeyboardAvoidingView
 ```jsx
 import React from 'react'
 import {ScrollView, View, TextInput} from 'react-native'
-import {KeyboardSafe} from 'react-smart-layout/native'
+import {KeyboardSafe} from 'react-smart-layout'
 
 function MyComponent() {
     return <ScrollView>

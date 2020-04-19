@@ -3,10 +3,19 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     mode: 'production',
-    entry: path.resolve(__dirname, 'index.js'),
+    entry: 'index.js',
     output: {
-        path: path.resolve(__dirname, "lib"),
-        filename: 'index.js'
+        path: path.resolve('lib'),
+        filename: 'index.js',
+        library: "react-smart-layout",
+        libraryTarget: "commonjs2"
+    },
+    externals: [nodeExternals(), {
+        react: 'react',
+        'react-native': 'react-native'
+    }],
+    optimization: {
+        minimize: true
     },
     module: {
         rules: [{
@@ -18,7 +27,6 @@ module.exports = {
             loader: "babel-loader"
         }]
     },
-    externals: [nodeExternals()],
     target: 'node',
     node: {
         __dirname: true
