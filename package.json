@@ -1,8 +1,9 @@
 {
   "name": "react-smart-layout",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "description": "Using flexbox to create simple and useful components (React Native).",
   "main": "lib/index.js",
+  "types": "./lib/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack ."
