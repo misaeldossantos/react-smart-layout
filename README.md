@@ -12,12 +12,13 @@ Simple flexbox abstraction for react-native and react for web.
 - components for padding and margin (put edge value as props)
 - component for space-between (justify-content)
 - other useful components, react-native only
-  Supports ReactJS through react-native-web
+
+Supports ReactJS through react-native-web
 
 ## Install
 
-npm: `npm install react-smart-layout --save`
-yarn: `yarn add react-smart-layout`
+- npm: `npm install react-smart-layout --save`
+- yarn: `yarn add react-smart-layout`
 
 # Components
 
