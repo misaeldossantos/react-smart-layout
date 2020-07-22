@@ -1,6 +1,7 @@
 import styled from 'styled-components/native'
+import View from './View'
 
-export default styled.View(({ horizontal, vertical, left, right, top, bottom, all }) => `
+export default styled(View)(({ horizontal, vertical, left, right, top, bottom, all }) => `
     ${horizontal? `margin-horizontal: ${(horizontal)}px;`: ""}
     ${vertical? `margin-vertical: ${(vertical)}px;`: ""}
     ${left? `margin-left: ${(left)}px;`: ""}

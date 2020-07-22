@@ -1,6 +1,6 @@
 import React, { Children, useMemo } from 'react'
-import { View } from 'react-native'
 import { joinObjects } from "../utils";
+import View from './View';
 
 export default function ({ children, wrapper, divider, style, space }) {
 

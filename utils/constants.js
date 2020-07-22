@@ -1,7 +1,15 @@
-import {StatusBar} from "react-native";
+
+let RNModule = null
+
+try {
+    RNModule = require("react-native")
+} catch(e) {
+    RNModule = require("react-native-web")
+}
 
 export default {
-    statusBarHeight: StatusBar.currentHeight,
+    RNModule,
+    statusBarHeight: RNModule.StatusBar.currentHeight,
     emptyComponent: () => null,
     emptyFn: () => {}
 }

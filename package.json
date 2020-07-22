@@ -1,6 +1,6 @@
 {
   "name": "react-smart-layout",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Using flexbox to create simple and useful components (React Native).",
   "main": "lib/index.js",
   "types": "./lib/types/index.d.ts",
@@ -14,9 +14,8 @@
     "react-native"
   ],
   "peerDependencies": {
-    "lodash": "^4.17.15",
-    "react-native": "^0.62.2",
-    "styled-components": "^5.1.0"
+    "lodash": "*",
+    "styled-components": "*"
   },
   "repository": {
     "type": "git",
@@ -36,7 +35,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "react-native": "^0.62.2",
-    "styled-components": "^5.1.0"
+    "react-native-web": "^0.13.4",
+    "styled-components": "^5.1.1"
   }
 }

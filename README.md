@@ -1,18 +1,18 @@
 
 ## react-smart-layout
 
-Using flexbox to create simple and useful components (React Native).
+Using flexbox to create simple and useful components (for react-native and react-js).
 
 What this library allows you to create:
 
 - columns and rows (with Flex Direction) and put space between the rows and columns
 - wrap components with padding and margin in the best way, without having to put them in style (like Flutter).
 
-Right now we only support React Native, but soon we will support ReactJS.
+Supports ReactJS through react-native-web
 
 ## Current version
 
-`react-smart-layout@0.2.4`
+`react-smart-layout@0.2.6`
 
 ## Install
 
@@ -20,6 +20,37 @@ Right now we only support React Native, but soon we will support ReactJS.
 or
 `yarn add react-smart-layout`
 
+## Example (ReactJS)
+
+```jsx
+import React from 'react';
+import { Column, Padding, Row, RowBetween } from 'react-smart-layout'
+
+function App() {
+  return (
+    <Column space={10}>
+      <Column space={30}>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+      </Column>
+      <Row space={30} alignCenter>
+        <span>First column</span>
+        <span>Second column</span>
+        <span>Third column</span>
+      </Row>
+      <RowBetween>
+        <span>Left</span>
+        <span>Right</span>
+      </RowBetween>
+    </Column>
+  );
+}
+
+export default App;
+```
+
+![Example](./assets/screen-web.png)
 
 ## Padding
 
