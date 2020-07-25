@@ -8,7 +8,7 @@
 
 Simple flexbox abstraction for react-native and react for web.
 
-- create columns and rows (flex-direction) and put space (defined by you) among children
+- create columns and rows (flex-direction) and put space (defined by you) between children
 - components for padding and margin (put edge value as props)
 - component for space-between (justify-content)
 - other useful components, react-native only
@@ -24,7 +24,7 @@ Supports ReactJS through react-native-web
 
 ### Column
 
-Create element with style 'flex-direction: column' and put space among elements
+Create element with style 'flex-direction: column' and put space between elements
 
 ```tsx
 import React from 'react'
@@ -36,7 +36,7 @@ function MyComponent() {
     return <Column
        space={10} // space in px
        style={{ backgroundColor: 'gray' }} // custom style
-       divider={<Divider/>} // put divider/other component among elements
+       divider={<Divider/>} // put divider/other component between elements
        wrapper={<Padding left={10}/>} // optional wrapper each element
     >
         <Text>Text 1</Text>
@@ -57,7 +57,7 @@ type ColumnProps = {
 
 ### Row
 
-Create element with style 'flex-direction: row' and put space among elements
+Create element with style 'flex-direction: row' and put space between elements
 
 ```tsx
 import React from 'react'
