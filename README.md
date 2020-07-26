@@ -20,6 +20,10 @@ Supports ReactJS through react-native-web
 - npm: `npm install react-smart-layout --save`
 - yarn: `yarn add react-smart-layout`
 
+## Test
+
+Link codesandbox: https://codesandbox.io/s/reverent-mcclintock-xx376?file=/src/App.js
+
 # Components
 
 ### Column
