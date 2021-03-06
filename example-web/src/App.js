@@ -1,15 +1,24 @@
 import React from 'react';
-import { Column, Padding, Row, RowBetween } from 'react-smart-layout'
+import { Column, Row, RowBetween } from 'react-smart-layout'
 
 function App() {
   return (
-    <Column space={10}>
-      <Column space={30}>
+    <Column
+      space={20}
+      divider={<div style={{ borderBottom: '1px solid red' }} />}
+    >
+      <Column
+        space={20}
+        wrapper={wrapper}
+      >
         <p>First paragraph</p>
         <p>Second paragraph</p>
         <p>Third paragraph</p>
       </Column>
-      <Row space={30}>
+      <Row
+        space={30}
+        divider={<div style={{ height: '100%', borderRight: '1px solid red' }} />}
+      >
         <span>First column</span>
         <span>Second column</span>
         <span>Third column</span>
@@ -21,5 +30,7 @@ function App() {
     </Column>
   );
 }
+
+const wrapper = <div style={{ backgroundColor: '#407bdb', border: '1px solid white', color: 'white' }} />
 
 export default App;

@@ -20,15 +20,15 @@ Supports ReactJS through react-native-web
 - npm: `npm install react-smart-layout --save`
 - yarn: `yarn add react-smart-layout`
 
-## Test
+### Example
 
-Link codesandbox: https://codesandbox.io/s/reverent-mcclintock-xx376?file=/src/App.js
+[![Edit react-smart-layout-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-smart-layout-example-xx376?fontsize=14&hidenavigation=1&theme=dark)
 
 # Components
 
 ### Column
 
-Create element with style 'flex-direction: column' and put space between elements
+Create element with direction column and put space between elements
 
 ```tsx
 import React from 'react'
@@ -49,19 +49,18 @@ function MyComponent() {
     </Column>
 }
 
-type ColumnProps = {
-    children: React.ReactNode,
+type ColumnProps = ViewProps & ScrollViewProps & {
     wrapper?: React.ReactElement<{}>,
     divider?: React.ReactElement<{}>,
-    style?: StyleProp<View>,
-    space?: number
-} 
+    space?: number,
+    scrollable?: boolean,
+}
 
 ```
 
 ### Row
 
-Create element with style 'flex-direction: row' and put space between elements
+Create element with direction row and put space between elements
 
 ```tsx
 import React from 'react'
@@ -81,14 +80,13 @@ function MyComponent() {
     </Row>
 }
 
-type RowProps = {
-    children: React.ReactNode,
-    style?: StyleProp<View>,
+type RowProps = ViewProps & ScrollViewProps & {
+    wrapper?: React.ReactElement<{}>,
+    divider?: React.ReactElement<{}>,
     space?: number,
     scrollable?: boolean,
-    scrollProps?: ScrollViewProps,
-    alignCenter?: boolean 
-} 
+    alignCenter?: boolean
+}
 
 ```
 
@@ -238,4 +236,9 @@ function App() {
 export default App;
 ```
 
-![Example](./assets/screen-web.png)
+<iframe src="https://codesandbox.io/embed/react-smart-layout-example-xx376?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="react-smart-layout-example"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>

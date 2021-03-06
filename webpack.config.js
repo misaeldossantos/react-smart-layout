@@ -17,7 +17,6 @@ module.exports = {
     optimization: {
         minimize: true
     },
-    devtool: 'source-map',
     module: {
         rules: [{
             test: /.(js|jsx)$/,

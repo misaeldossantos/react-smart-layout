@@ -1,43 +1,29 @@
 import React from 'react'
 import { StyleProp, ScrollViewProps, View, ViewProps } from 'react-native';
 
-export const Column: (props: ColumnProps) => React.ReactElement;
-
-type ColumnProps = {
-    children: React.ReactNode,
+type BaseProps = ViewProps & ScrollViewProps & {
     wrapper?: React.ReactElement<{}>,
     divider?: React.ReactElement<{}>,
-    style?: StyleProp<View>,
-    space?: number
-} 
-
-export const Row: (props: RowProps) => React.ReactElement;
-
-type RowProps = {
-    children: React.ReactNode,
-    style?: StyleProp<View>,
     space?: number,
     scrollable?: boolean,
-    scrollProps?: ScrollViewProps,
+}
+
+export const Column: React.FC<BaseProps>;
+
+export const Row: React.FC<BaseProps & {
     alignCenter?: boolean 
-} 
+}>
 
-export const RowBetween: (props: RowBetweenProps) => React.ReactElement;
-
-type RowBetweenProps = {
+export const RowBetween: React.FC<{
     children: React.ReactNode,
-    style?: StyleProp<View>,
-} 
+    style?: StyleProp<View>
+}>
 
-export const KeyboardSafe: (props: KeyboardSafeProps) => React.ReactElement;
+export const KeyboardSafe: React.FC<{}>;
 
-type KeyboardSafeProps = {
-    children: React.ReactNode,
-} 
-
-export const Margin: (props: MarginPaddingProps) => React.ReactElement;
-export const Padding: (props: MarginPaddingProps) => React.ReactElement;
-export const ThemedPadding: (props: MarginPaddingProps) => React.ReactElement;
+export const Margin: React.FC<MarginPaddingProps>;
+export const Padding: React.FC<MarginPaddingProps>;
+export const ThemedPadding: React.FC<MarginPaddingProps>;
 
 type MarginPaddingProps = {
     children: React.ReactNode,
@@ -50,4 +36,4 @@ type MarginPaddingProps = {
     all?: number,
 }
 
-export const SpaceStatusBar: (props: ViewProps) => React.ReactElement
+export const SpaceStatusBar: React.FC<ViewProps>
