@@ -236,9 +236,4 @@ function App() {
 export default App;
 ```
 
-<iframe src="https://codesandbox.io/embed/react-smart-layout-example-xx376?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="react-smart-layout-example"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+![image](https://user-images.githubusercontent.com/47726159/110220413-5920f300-7ea4-11eb-96c0-5da59a7fc89d.png)
