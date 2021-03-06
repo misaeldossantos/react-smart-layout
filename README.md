@@ -209,18 +209,26 @@ function MyComponent() {
 ### ReactJS
 
 ```jsx
-import React from 'react';
-import { Column, Padding, Row, RowBetween } from 'react-smart-layout'
+import React from "react";
+import { Column, Row, RowBetween } from "react-smart-layout";
 
 function App() {
   return (
-    <Column space={10}>
-      <Column space={30}>
+    <Column
+      space={20}
+      divider={<div style={{ borderBottom: "1px solid red" }} />}
+    >
+      <Column space={20} wrapper={wrapper}>
         <p>First paragraph</p>
         <p>Second paragraph</p>
         <p>Third paragraph</p>
       </Column>
-      <Row space={30} alignCenter>
+      <Row
+        space={30}
+        divider={
+          <div style={{ height: "100%", borderRight: "1px solid red" }} />
+        }
+      >
         <span>First column</span>
         <span>Second column</span>
         <span>Third column</span>
@@ -233,7 +241,17 @@ function App() {
   );
 }
 
+const wrapper = (
+  <div
+    style={{
+      backgroundColor: "#407bdb",
+      border: "1px solid white",
+      color: "white"
+    }}
+  />
+);
+
 export default App;
 ```
 
-![image](https://user-images.githubusercontent.com/47726159/110220413-5920f300-7ea4-11eb-96c0-5da59a7fc89d.png)
+![image](https://user-images.githubusercontent.com/47726159/110220437-8e2d4580-7ea4-11eb-8fd7-d750232fd4a3.png)
